@@ -8,5 +8,11 @@ This challenge included the following steps:
 ### Split the Data into Training and Testing Sets
 I first read in our lending_data.csv and created our original dataframe.
 
-I began by separating the columns in the original dataframe and created (y) from the "loan_status" column and (X) from all remaining columns. "0" is assigned to 75,036 values of the "loan_status" column identified as healthy, while "1" is assigned to 2,500 values of the "loan_status" column identified as high-risk. Once the values were identified I was able to split the data using train_test_split. Once split, values for X_train, X_test, y_train, y_test allowing for an initial logisit regression model
+I began by separating the columns in the original dataframe and created (y) from the "loan_status" column and (X) from all remaining columns. "0" is assigned to 75,036 values of the "loan_status" column identified as healthy, while "1" is assigned to 2,500 values of the "loan_status" column identified as high-risk. Once the values were identified I was able to split the data using train_test_split. Once split, values for X_train, X_test, y_train, y_test allowing for an initial logistic regression model.
 
+### Split the Data into Training and Testing Sets
+Using X_train and y_train I fit the data to a logistic regression model. Next, I used the testing feature data(X_test) and fit the model. To evaluate, the model's performance I checked the following:
+- Calculate the accuracy score of the model.
+- Generate a confusion matrix.
+- Print the classification report.
+<img width="655" alt="Screenshot 2023-05-21 at 11 44 07 AM" src="https://github.com/Erink8/credit-risk-classification/assets/119360371/699f9a5d-24fd-4f80-a89c-79c410a35b65">
